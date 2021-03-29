@@ -1,0 +1,17 @@
+
+.container{
+    height: 500px;
+    border: 2px solid olive;
+    background-color: orange;
+    margin: 0mm;
+    display: flex;
+}
+
+.main{
+    background-color: #7b68ee;
+ display: flex;
+    justify-content: center;
+    
+    
+    
+}

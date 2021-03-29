@@ -1,0 +1,20 @@
+div{
+    color: blue;
+    width:25%;
+    height:100px;
+    border: 2px dotted red;
+    padding-left: 50%;
+
+    
+
+}
+#one{
+    margin-top: 100px;
+    margin-right: 50%;
+    
+}
+#two{
+    margin: 100px;
+    margin-bottom: 25%;
+    padding-right: 50px;
+}
