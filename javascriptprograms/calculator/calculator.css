@@ -1,0 +1,33 @@
+.container{
+    border: 2px solid  black;
+    width: 400px;
+    height: 450px;
+    background-color:rgb(190, 182, 182);
+}
+.row1{
+    border: 2px solid  black;
+    width:350px;
+    height: 100px;
+    font-size: 60px;
+    text-align-last: right;
+    background-color:cornsilk;
+    color:black;
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
+}
+.number{
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.btn{
+    width:80px;
+    height: 40px;
+    border-radius: 100px;
+    font-size: 30px;
+    background-color: indigo;
+    color: ivory;
+ 
+}
+#back{
+    width:250px;
+}

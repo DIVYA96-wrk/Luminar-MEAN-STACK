@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>FETCH USERS</h1>
+
+
+
+
+
+    <button onclick="request()">FETCH ALL USERS</button>
+
+    <p id="result"></p>
+    
+</body>
+
+
+
+<script>
+
+  function request()
+  {
+    var request= new XMLHttpRequest;
+    request.open("get","https://jsonplaceholder.typicode.com/users")
+
+    request.send();
+
+    request.onreadystatechange=()=>{
+        if (request.readyState==4){
+            if(request.status>199 & request.status<300 )
+            {
+                console.log(request.responseText);
+               let obj =JSON.parse(JSON.stringify(request.responseText));
+               document.querySelector("#result").innerHTML=obj;
+            }
+            else{
+                alert("failed");
+            }
+        }
+        else{
+            //alert("not completed");
+        }
+    }
+  }  
+
+
+
+
+
+</script>
+</html>

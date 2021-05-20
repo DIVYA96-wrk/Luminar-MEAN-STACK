@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="" method="get">
+            <div >
+                <input type="text" name="monitor" id="display" class="row1" placeholder="0">
+            </div>
+            <div class="number ">
+                <input type="button" value="7" class="btn" id="seven" onclick="displayBox('7')">
+                <input type="button" value="8" class="btn" id="eight" onclick="displayBox('8')">
+                <input type="button" value="9" class="btn" id="nine" onclick="displayBox('9')" >
+                <input type="button" value="+" class="btn" id="plus" onclick="displayBox('+')">
+            </div>
+
+            <div class="number ">
+                <input type="button" value="4"class="btn" id="four" onclick="displayBox('4')">
+                <input type="button" value="5"class="btn" id="five"onclick="displayBox('5')">
+                <input type="button" value="6" class="btn"id="six" onclick="displayBox('6')">
+                <input type="button" value="-" class="btn" id="minus" onclick="displayBox('-')">
+            </div>
+
+            <div class="number">
+                <input type="button" value="1" class="btn" id="one" onclick="displayBox('1')">
+                <input type="button" value="2"class="btn" id="two" onclick="displayBox('2')">
+                <input type="button" value="3" class="btn" id="three" onclick="displayBox('3')">
+                <input type="button" value="*" class="btn" id="star" onclick="displayBox('*')">
+            </div>
+
+            <div class="number ">
+                <input type="button" value="0" class="btn" id="zero" onclick="displayBox('0')">
+                <input type="button" value="." class="btn" id="dot" onclick="displayBox('.')">
+                <input type="button" value="/" class="btn" id="div" onclick="displayBox('/')">
+                <input type="button" value="=" class="btn" id="equal" onclick="evalvulateExpression()">
+            </div>
+            <div class="number ">
+                <input type="button" value="<" class="btn" id="back" onclick="cancelElement()">
+                <input type="button" value="c" class="btn" id="dot" onclick="clearBox()">
+            </div>
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+    </div>
+
+</body>
+<script src="calculator.js"></script>
+
+</html>
